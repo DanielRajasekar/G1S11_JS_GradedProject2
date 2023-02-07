@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cadetblue;
+    font-size: 20px;
+}
+.login{
+    width: 70vw;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0px 20px ;
+    border: 1px solid black;
+    box-shadow: 0 0 8px 3px;
+}
+#login-form{
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
+.message{
+    /* border: 1px solid black; */
+    position: relative;
+    top:-50px;
+    color: red;
+}
+input{
+    border: 2px solid orange;
+    border-radius: 20px 0px 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.539);
+    color: aliceblue;
+    font-size: 15px;
+}
+button{
+    padding: 5px 20px;
+    font-size: 20px;
+    border: 2px solid orange;
+    border-radius: 20px 0px 20px;
+    background-color: rgba(0, 0, 0, 0.539);
+    color: aliceblue;
+}

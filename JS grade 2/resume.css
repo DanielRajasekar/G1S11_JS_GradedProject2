@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: aliceblue;
+}
+header{
+    position: relative;
+    top:7px; 
+    text-align: center;
+}
+.container{
+    width: 70vw;
+    height: 85%;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+    /* background-color: blue; */
+    padding: 0px 20px ;
+    border: 1px solid black;
+    box-shadow: 0 0 8px 3px;
+    overflow-y: scroll;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.head{
+    background-color: rgb(179, 250, 250);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.name{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    padding-top:5px ;
+}
+.applied-for{
+    font-size: 1em;
+    padding-bottom:5px ;
+}
+.icon{
+    font-size: 35px;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+.body-details  {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 3.9%;
+    margin: -20px;
+    padding-right: 10px;
+}
+.personal-details{
+    width: 200px;
+    background-color: rgb(249, 228, 246);
+    padding-top: 10px;
+    height: 40%;
+    margin-right: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: sticky;
+    top: 14%;
+    z-index: 9;
+}
+.main-details{
+    width: 100%;
+    /* background-color: brown; */
+}
+h2{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+section p{
+    padding-left: 50px;
+    line-height: 24px;
+}
+li{
+    /* padding-left: 50px; */
+    line-height: 25px;
+    margin-left: 50px;
+}
+
+@media(max-width:1920px ){
+    .container{
+        width: 50vw;
+    }
+}
+@media(max-width:1024px ){
+    .container{
+        width: 80vw;
+    }
+}
+tr th{
+    background-color: rgb(200, 197, 197);
+    width: 200px;
+    text-align: left;
+    padding-right: 5px;
+}
+tr td{
+    text-align: end;
+    padding-right: 5px;
+}
+.btn{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.search-box{
+    width: 200px;
+    height: 30px;
+    border: 2px solid orange;
+    border-radius: 0px 10px 0px 10px;
+    background-color:rgba(0, 0, 0, 0.82) ;
+    color: antiquewhite;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px 20px;
+}
+#current-resume{
+    position: relative;
+    top:630px; 
+    text-align: center;
+}
+.error{
+    /* background-color: black; */
+    width: 50vw;
+    height: 30%;
+    position: absolute;
+    left: 50%;
+    top:30%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+}
+.error-message{
+    padding-top: 50px;
+}
